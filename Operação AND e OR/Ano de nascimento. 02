@@ -1,0 +1,18 @@
+# Solicite o ano de nascimento de uma pessoa, calcule a idade e verifica a faixa etária da pessoa (abaixo de 10, criança, de 11 a 17 adolescente, de 18 a 59, adulto, acima de 60 idos
+
+ano1 = int(input("Digite o ano atual "))
+ano2 = int(input("Digite o ano de nascimento "))
+idade = ano1 - ano2
+print("A idade é ", idade)
+
+if idade <= 10:
+    print("Criança")
+elif idade == 11 or idade <= 17:
+    print("Adolescente")
+elif idade == 18 or idade <= 59:
+    print("Adulto")
+elif idade >= 60 and idade <= 116:
+    print("Idoso")
+    
+else:
+    print("Idade inválida")

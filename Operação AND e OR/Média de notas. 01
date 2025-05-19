@@ -1,0 +1,19 @@
+# Solicite duas notas ( 0 a 100) e calcule a média. Se a média for maior ou =70 está aprovado, entre 50 e 70, recuperação e abaixo de 50 reprovado.
+
+n1 = int(input("Digite uma nota "))
+n2 = int(input("Digite outra nota "))
+if n1 > 0 and n1 <= 100 and n2 > 0 and n2 <= 100:
+    
+    soma = n1 + n2
+    media = soma / 2
+    print("A média é ", media)
+    
+    if media >= 70:
+        print("Aprovado")
+    elif media == 50 or media <= 70:
+        print("Recuperação")
+    elif media < 50:
+        print("Reprovado")
+        
+else:
+    print("Digite uma nota de 0 a 100 ")
